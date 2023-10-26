@@ -1,0 +1,16 @@
+dfs (Graph G) {
+    // all vertices of G are first painted white
+    while there is a white node in G {
+        dfs-visit(G,u)
+    }
+}
+
+dfs-visit (Graph G, Vertex u){
+    the vertex u is painted gray
+    u.d = time++ // u has now been discovered
+    for all white successors v of u {
+        dfs-visit(G,v)
+    }
+    u is painted black
+    u.f = time++ //Exploration of u has finished
+}
