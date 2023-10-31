@@ -14,3 +14,5 @@ dfs-visit (Graph G, Vertex u){
     u is painted black
     u.f = time++ //Exploration of u has finished
 }
+
+//start at(0,0) or wherever we can start and order of the direction 1:right|2:down|3:up|4:left
